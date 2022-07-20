@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GLA University Prototype</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,800;1,100&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a5252c5595.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="preloader"></div>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/logo.jpg" alt="gla logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="vision.html">Vision</a></li>
+					<li><a href="https://glauniversity.in:8085">Login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>				
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<h1>Contact us</h1>
+
+	</section>
+
+
+<!-------------------contact us content-------------------->
+
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731193856!2d77.59113581505986!3d27.605688682834213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1646557022438!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>
+						17km Stone, NH-2
+					</h5>
+					<p>Mathura-Delhi Road Chaumuhan, Uttar Pradesh 281406</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>
+						09927064017
+					</h5>
+					<p>Monday to Saturday, 10AM to 6PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>
+						glauniversity@gla.ac.in
+					</h5>
+					<p>Email us for your query</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+			<form action="form-handler.php" method="post">
+				<input type="text" placeholder="Enter Your Name" name="name" required>
+				<input type="email" placeholder="Enter Your Email" name="email" required>
+				<input type="text" placeholder="Enter Your subject" name="subject" required>
+				<textarea rows="8" placeholder="Message" name="message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Message</button>
+
+			</form>
+		</div>
+	</div>
+	
+</section>
+
+
+
+
+
+
+
+<!---------footer--------->
+
+<section class="footer">
+	<h4>
+		About us
+	</h4>
+	<p>We at GLA strongly believe in the creation of good quality human resource with training of intellectual minds. To help students stand-out and gain competitive edge over the others, we stress on developing both functional skills and exceptional practical outlook.<br> The Training and Placement cell works tirelessly towards ensuring employment for all students across various industries and helping budding entrepreneurs in establishing successful businesses.<br> The department organizes activities and workshops at a regular basis to enable students to be effective team leaders and players.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p> Made with <i class="fa fa-heart-o"></i></p>
+</section>
+
+
+
+<!----------------Javascript for toggle menu------------------>
+<script type="text/javascript">
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+<script type="text/javascript">
+	var preloader = document.getElementById("preloader");
+	window.addEventListener('load', function(){
+	preloader.style.display = 'none';
+	});
+
+</script>
+</body>
+</html>

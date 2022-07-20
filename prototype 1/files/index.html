@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GLA University Prototype</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,800;1,100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a5252c5595.js" crossorigin="anonymous"></script>
+</head>
+<body onload="myFunction()">
+<div id="preloader"></div>
+<div id="popUpMain" style="display:none;">
+	<div id="popup">
+		<hl id="newsHeading">Schedule a Call from us</h1><br>
+		<i class="fa fa-phone"></i> 
+		<input type="tel" name="number" id="telid" placeholder="Enter your phone" minlength="10" maxlength="13">
+	    <br>
+		<button class="submit-pop-id hero-btn red-btn"> Schedule My Call </button>
+		<button class="submit-pop-id hero-btn red-btn"> No Thanks </button>
+	</div>
+</div>
+
+<!--------Remove comment to make website load longer to see preloader----
+
+	<iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="704" height="396" src="https://www.youtube.com/embed/MX1aGs3tYVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	-------->
+
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.jpg" alt="gla logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="vision.html">Vision</a></li>
+					<li><a href="https://glauniversity.in:8085">Login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<div class="text-box">
+		<h1>Ranks 1 in UP</h1>
+		<p>GLA is a well renowned name in the field of education and is directly contributing <br>to the overall education scenario of the country. <br>Our students are working for some very famous companies in the country in different functions.
+		</p>
+		<a href="" class="hero-btn">Visit us to know more</a>
+
+	</div>
+
+	</section>
+
+	<section class="course">
+		<h1>Our Achievements</h1><br>
+		<!--<p></p>-->
+		<div class="row">
+			<div class="course-col">
+				<h3>350+</h3>
+				<p>MNCs with salary packages ranging from 4.5 to 32 LPA (Batch 2022) and Still Counting</p>
+			</div><br>
+			<div class="course-col">
+				<h3>1500+</h3>
+				<p>Placements offers (batch 2022) </p>
+			</div><br>
+			<div class="course-col">
+				<h3>76%</h3>
+				<p>Average Placement over the last 10 years</p>
+			</div><br>
+			<div class="course-col">
+				<h3>32LPA</h3>
+				<p>Highest Package Offfered(in Campus)</p>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<!-----Vision----->
+	<section class="vision">
+		<h1>Our vision</h1><br>
+		<p>We at GLA strongly believe in the creation of good quality human resource with training of intellectual minds. To help students stand-out and gain competitive edge over the others, we stress on developing both functional skills and exceptional practical outlook. <br>The Training and Placement cell works tirelessly towards ensuring employment for all students across various industries and helping budding entrepreneurs in establishing successful businesses. The department organizes activities and workshops at a regular basis to enable students to be effective team leaders and players.</p>
+
+
+		<div class="row">
+			<div class="vision-col">
+				<img src="images/pa-consulting-the-live_271119_question-time.jpg" alt="">
+				<div class="layer">
+					<h3>London</h3>
+				</div>
+			</div>
+			<div class="vision-col">
+				<img src="images/pa-consulting-the-live_271119_question-time.jpg" alt="">
+				<div class="layer">
+					<h3>London</h3>
+				</div>
+			</div>
+			<div class="vision-col">
+				<img src="images/pa-consulting-the-live_271119_question-time.jpg" alt="">
+				<div class="layer">
+					<h3>London</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!---------Facilities----------->
+	<section class="facilities">
+		<h1>Our facilities</h1>
+		<p>hbcmbdfev evsavd regwegwvae</p>
+		<div class="row">
+			<div class="facilities-col">
+				<img src="images/libraries-banner.jpg">
+				<h3>World Class Library</h3>
+				<p>qwnl qwcv qwbvljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+			</div>
+
+			<div class="facilities-col">
+				<img src="images/libraries-banner.jpg">
+				<h3>World Class Library</h3>
+				<p>qwnl qwcv qwbvljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+			</div>
+			<div class="facilities-col">
+				<img src="images/libraries-banner.jpg">
+				<h3>World Class Library</h3>
+				<p>qwnl qwcv qwbvljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+			</div>
+		</div>
+	</section>
+
+<!------------testimonials--------------->
+
+<section class="testimonials">
+	<h1>What our Alumni has to say</h1>
+	<p>bjkwqqqqqqqqqaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+	
+	<div class="row">
+		<div class="testimonials-col">
+			<img src="images/pa-consulting-modern-student.jpg">
+			<div>
+				<p>qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+				</p>
+				<h3>Surya Raj </h3>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-o"></i>
+			</div>	
+		</div>
+		<div class="testimonials-col">
+			<img src="images/pa-consulting-modern-student.jpg">
+			<div>
+				<p>qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+				</p>
+				<h3>Surya Raj </h3>
+								<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-half-o"></i>
+			</div>
+		</div>
+		<div class="testimonials-col">
+			<img src="images/pa-consulting-modern-student.jpg">
+			<div>
+				<p>qwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+				</p>
+				<h3>Surya Raj </h3>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star-o"></i>
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+<!---------Call to Action--------->
+
+<section class="cta">
+	<h1>Enroll for our various courses</h1>
+	<a href="" class="hero-btn">Contact us</a>
+	
+</section>
+
+
+<!-----------Comment--------->
+
+
+<section class="comment">
+	<div class="row">
+		<div class="comment-col">
+		<h3>Contact us</h3>
+	    </div>
+		<div class="comment-box comment-col">
+			<h4>Leave your query</h4><p>and we will contact you</p>
+			<form class="comment-form">
+				<input type="text" placeholder="Enter Name" name="Name"></input>
+				<input type="email" placeholder="Enter email" name="email"></input>
+				<input type="tel"  maxlength="13" minlength="10" placeholder="Enter Phone" name="Number"></input>
+				<textarea rows="5" placeholder="Enter your query"></textarea>
+				<button type="submit" class="hero-btn red-btn">Send</button>
+			</form>
+		</div>
+	</div>	
+</section>
+
+<!---------footer--------->
+
+<section class="footer">
+	<h4>
+		About us
+	</h4>
+	<p>We at GLA strongly believe in the creation of good quality human resource with training of intellectual minds. To help students stand-out and gain competitive edge over the others, we stress on developing both functional skills and exceptional practical outlook.<br> The Training and Placement cell works tirelessly towards ensuring employment for all students across various industries and helping budding entrepreneurs in establishing successful businesses.<br> The department organizes activities and workshops at a regular basis to enable students to be effective team leaders and players.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p> Made with <i class="fa fa-heart-o"></i></p>
+	
+</section>
+
+
+
+
+<!----------------Javascript for toggle menu------------------>
+<script type="text/javascript">
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+
+
+<!----------------Javascript for pop up------------------>
+<script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+
+		var preloader = document.getElementById("preloader");
+		window.addEventListener('load', function(){
+		preloader.style.display = 'none';
+		});
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+		$(document).ready(function(){
+			setTimeout(function(){
+				$('#popUpMain').css('display','block');
+			}, 8000);
+		});
+		$('.submit-pop-id').click(function(){
+			$('#popUpMain').css('display','none');
+		})
+	</script>
+
+
+
+</body>
+</html>
